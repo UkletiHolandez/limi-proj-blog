@@ -1,0 +1,55 @@
+/*
+
+    Orange dark: #a17964
+    Orange Light: #9d7560
+    Orange Regular: #d65614
+
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Margin Definitions */
+
+.mt-5, .my-5 {
+    margin-top: 5%;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 5%;
+}
+
+.ml-5, .mx-5 {
+    margin-left: 5%;
+}
+
+.mr-5, .mx-5 {
+    margin-right: 5%;
+}
+
+.mt-2, .my-2 {
+    margin-top: 2%;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: 2%;
+}
+
+.ml-2, .mx-2 {
+    margin-left: 2%;
+}
+
+.mr-2, .mx-2 {
+    margin-right: 2%;
+}
+
+/* End Margin definitions */
