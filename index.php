@@ -29,14 +29,14 @@
         <div class="container">
             <div class="header">
                 <h2 class="logo">
-                    <a href="index.php"><img src="" alt="logo"></a>
+                    <a href="index.php"><img src="public/images/logo.png" alt="logo"></a>
                 </h2>
                 <nav class="nav-bar">
                     <ul>
-                        <li><a href="#"></a>Home</li>
-                        <li><a href="#"></a>About</li>
-                        <li><a href="#"></a>Login</li>
-                        <li><a href="#"></a>Menu</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Menu</a></li>
                     </ul>
                 </nav>
             </div>
