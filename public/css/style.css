@@ -18,6 +18,30 @@
     padding: 0 15px;
 }
 
+.container-sm {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 15px;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+/* Title */
+.title {
+    font-size: 30px;
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.subscribe-title {
+    color: #888888;
+    margin-top: 0;
+}
+/* End Title*/
+
 /* Margin Definitions */
 
 .mt-5, .my-5 {
@@ -58,7 +82,8 @@
 
 .header-wrapper {
     position: relative;
-    background-color: #d65614;
+    background: rgb(227,140,95);
+    background: linear-gradient(0deg, rgba(227,140,95,1) 1%, rgba(223,119,64,1) 54%, rgba(195,78,18,1) 100%);
 }
 
 .header {
@@ -108,4 +133,561 @@
     color: black;
 }
 
-/* End Navbar*/
+.nav-bar li .fa-bars {
+    color: #fff;
+    padding: 0 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.expand {
+    display: flex;
+}
+
+.mobile-nav {
+    position: absolute;
+    background-color: #e38c5f;
+    border: 1px solid #d65714;
+    right: 0;
+}
+
+.mobile-nav .responsive-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav .responsive-menu ul li {
+    list-style: none;
+    position: relative;
+    padding: 15px 5px;
+    min-width: 150px;
+}
+
+.mobile-nav .responsive-menu ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 15px 0;
+    min-width: 150px;
+}
+
+/* End Navbar */
+/* End Header*/
+
+/* Main Banner */
+
+.main-banner {
+    background-image: url('https://beingcovers.com/media/facebook-cover/Blue-Sea-facebook-covers-3257.jpeg');
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+    color: black;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.banner-text p {
+    font-size: 16px;
+}
+
+/* End Main Banner */
+
+/* Boxes */
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.box {
+    width: 33.33%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.box h2 {
+    color: #6d6d6d;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+    /*padding: 16px;*/
+}
+
+.box p {
+    color: gray;
+    font-size: 16px;
+    /*padding-bottom: 16px;*/
+    line-height: 1.4;
+}
+
+.box a {
+    color: #d65614;
+    text-decoration: none;
+}
+
+/* End Boxes */
+
+/* Events */
+
+/*.box-wrapper.events .box {
+     padding-right: 0;
+}*/
+
+/* .box-wrapper.events img {
+    width: 100%;
+} */
+
+.box-wrapper.events h3 {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    color: #d65614;
+}
+
+.box-wrapper.events span {
+    font-size: 12px;
+    font-style: italic;
+    color: #a1a1a1;
+}
+
+/* End Events*/
+
+/* Blogs */
+
+.box-wrapper.blog .box {
+    width: 49.99%;
+}
+
+.box-wrapper.blog h3 {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    color: #d65614;
+}
+
+.box-wrapper.blog span {
+    font-size: 12px;
+    font-style: italic;
+    color: #a1a1a1;
+}
+
+.blog-btn {
+    text-align: center;
+    
+}
+
+.blog-btn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    color: #444444;
+}
+
+.blog-btn a:hover {
+    background-color: #d65614;
+    border-color: #d65614;
+    color: #fff;
+}
+
+/* End Blogs */
+
+/* Subscribe */
+
+.subscribe {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.subscribe {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.subscribe-form h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.subscribe-form .form-inline {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-form .form-inline input {
+    vertical-align: middle;
+    margin: 5px 0;
+    padding: 10px;
+    min-width: 340px;
+    font-size: 14px;
+    color: #444444;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
+}
+
+.subscribe-form .form-inline input:focus {
+    border: 1px solid #d65614 !important;
+}
+
+.subscribe-form .form-inline a {
+    text-decoration: none;
+    color: #444444;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.subscribe-form .form-inline a:hover {
+    color: #fff;
+    background-color: #d65614;
+}
+
+/* End Subscribe */
+
+/* Executive */
+
+.box-wrapper.executive .box {
+    width: 24.99%;
+}
+
+.box-wrapper.executive h3 {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    color: #545454;
+    font-weight: 400;
+}
+
+.box-wrapper.executive span {
+    font-size: 14px;
+    color: #a1a1a1;
+    padding-bottom: 5px;
+}
+
+.box-wrapper.executive img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* End Executive*/
+
+/* Footer */
+
+.footer-wrapper {
+    background-color: #d65714;
+    
+}
+
+.footer {
+    padding: 30px 0 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .contact, .footer .social {
+    display: flex;
+}
+
+.footer .contact ul, .footer .social ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.footer .contact li {
+    list-style: none;
+    position: relative;
+    color: white;
+}
+
+.footer .contact li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    padding: 8px;
+    letter-spacing: 0.8px;
+}
+
+.footer .contact li a:hover {
+    border-top: 3px solid #fff;
+}
+
+.footer .social  {
+    margin-bottom: 10px;
+}
+
+.footer .social .social-images {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.footer .social .social-images a {
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1.5px dashed #d65714;
+    box-shadow: 0 0 0 2px #fff;
+    display: flex;
+    align-items: center;
+}
+
+.footer .social .social-images a img {
+    width: 15px;
+    height: 15px;
+}
+
+.footer .contact-2 p {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+
+/* End Footer */
+
+
+
+/* Login & SignUp*/
+
+/*.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.login-wrapper, 
+.signup-wrapper {
+    min-height: 780px;
+    background: rgb(222,165,165);
+    background: linear-gradient(0deg, rgba(222,165,165,1) 0%, rgba(227,161,127,0.9794292717086834) 41%, rgba(227,140,95,1) 100%);
+}
+
+.login-box, 
+.signup-box {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.login-form, 
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.login-form h2, 
+.signup-form h2 {
+    color: #6d6d6d;
+    font-weight: 400;
+}
+
+.login-box .login-form form input[type=text],
+.login-box .login-form form input[type=password],
+.signup-box .signup-form form input[type=text],
+.signup-box .signup-form form input[type=password]
+ {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 1px solid #888888;
+    outline: none;
+}
+
+.login-box .login-form form .login-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.login-options .options-box {
+    width: 49.99%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-options .option-remember {
+    margin: 10px 0;
+    justify-content: flex-start;
+}
+
+.login-options .option-remember label {
+    margin: 0 10px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 3px;
+}
+
+.login-options .option-forgot {
+    justify-content: flex-end;
+}
+
+.login-options .option-forgot a {
+    text-decoration: none;
+    color:#d65714;
+}
+
+.login-box .login-form form .login-btn,
+.signup-box .signup-form form .signup-btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #d65714;
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid #d65714;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-box .login-form .new-member,
+.signup-box .signup-form .already-member {
+    display: flex;
+}
+
+.login-box .login-form .new-member p,
+.signup-box .signup-form .already-member p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-box .login-form .new-member p a,
+.signup-box .signup-form .already-member p a {
+    text-decoration: none;
+    color: #d65714;
+}
+
+.signup-box .signup-form form .signup-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.signup-box .signup-form form .signup-options label {
+    margin: 0 10px;
+    letter-spacing: 0.4px;
+}
+
+.signup-box .signup-form form .signup-options label a {
+    text-decoration: none;
+    color: #d65714;
+}
+
+/* End Login & SignUp */
+
+
+/* Responsive */
+/* Tablet - do 768 pixela */
+@media (max-width: 768px) {
+    .nav-bar ul li:not(:last-child) {
+        display: none;
+    } 
+
+    .nav-bar ul li:last-child {
+        padding: 8px;
+        float: right;
+        display: flex;
+    }
+
+    .nav-bar li .fa-bars {
+        display: flex;
+    }
+
+    .box {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .box-wrapper.blog .box {
+        width: 100%;
+    }
+
+    .subscribe {
+        min-height: 150px;
+        margin-top: 50px;
+    }
+
+    .subscribe-form .form-inline input {
+        min-width: 200px;
+    }
+
+    .box-wrapper.executive .box {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .footer .contact-2 p {
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+
+    .login-wrapper {
+        min-height: 580px;
+    }
+
+    .login-options .options-box {
+        width: 100%;
+        justify-content: flex-start;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+}
+
+/* Monitor - Od 768px dp (max) */
+@media (min-width: 768px) {
+    
+}
+
+/* SmartPhone - do 470px */
+@media (max-width: 470px) {
+    
+    .footer .contact li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: white;
+        padding: 8px;
+        letter-spacing: 0.8px;
+    }
+    
+    .footer .contact-2 p {
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+/* End Responsive */

@@ -17,47 +17,23 @@
     <!--<link rel="apple-touch-icon" href="icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/ccf2869940.js" crossorigin="anonymous"></script>
+        
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/normalize.css">
     <link rel="stylesheet" href="public/css/style.css">
 
 </head>
 <body>
- 
-    <header class="header-wrapper">
-        <div class="container">
-            <div class="header">
-                <h2 class="logo">
-                    <a href="index.php"><img src="public/images/logo.png" alt="logo"></a>
-                </h2>
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Menu</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-    </header>
+    <!-- Header -->
+    <?php include('public/templates/header.php'); ?>
 
     <!-- Banner -->
-    <section class="main-banner mb-5">
-        <div class="container">
-            <div>
-                <h1>Limi School Blogger</h1>
-                <p>It is our belief that in order to be most efficient it requires adaptive technology and software our customers can focus on their core business.</p>
-            </div>
-
-        </div>
-    </section>
+    <?php include('public/templates/banner.php'); ?>
 
     <!-- Grid boxes -->
-    <section>
-        <div class="box-wrapper container">
+    <section class="container mb-5">
+        <div class="box-wrapper">
             <div class="box">
                 <h2>Focus on Systems</h2>
                 <p>While our prices are competitive, it's the value that's unmatched.</p>
@@ -76,61 +52,137 @@
         </div>
     </section>
 
-    <section>
-        <div class="box-wrapper container">
-            <div>
-                <h2>Upcoming events</h2>
-            </div>
+    <!-- Events -->
+    <section class="container mb-5">
+        <h2 class="title">Upcoming events</h2>
+        <div class="box-wrapper events">
             <div class="box">
-                <img src="" alt="">
-                <p>Rihanna, Eminem on stage</p>
-                <p>Integrating technology and software solutions.</p>
+                <img src="public/images/event/1.jpg" alt="alt-img">
+                <h3>Rihanna, Eminem on stage</h3>
+                <span>Integrating technology and software solutions.</span>
                 <p>It is our belief that in order to be most efficient it requires adaptive technology and software solutions.</p>
                 
             </div>
             <div class="box">
-                <img src="" alt="">
-                <p>Dr. Dre on stage live</p>
-                <p>Integrating technology and software solutions.</p>
+                <img src="public/images/event/2.jpg" alt="alt-img">
+                <h3>Dr. Dre on stage live</h3>
+                <span>Integrating technology and software solutions.</span>
                 <p>It is our belief that in order to be most efficient it requires adaptive technology and software solutions.</p>
             </div>
             <div class="box">
-                <img src="" alt="">
-                <p>Macaroons live Party</p>
-                <p>Integrating technology and software solutions.</p>
+                <img src="public/images/event/3.jpg" alt="alt-img">
+                <h3>Macaroons live Party</h3>
+                <span>Integrating technology and software solutions.</span>
                 <p>It is our belief that in order to be most efficient it requires adaptive technology and software solutions.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="box-wrapper container">
-            <div>
-                <h2>Latest Blogs</h2>
+    <!-- Latest Blogs -->
+    <section class="container mb-5">
+        <h2 class="title">Latest Blogs</h2>
+        <div class="box-wrapper blog">
+            <div class="box">
+                <img src="public/images/blog/1.jpg" alt="">
+                <h3>Communicating with you every step of the way</h3>
+                <span>July 02, 2014 | Tag: Technology | By: David John</span>
+                <p>We combine continuing education and constant monitoring us with your project details if you are interested to ge of industry trends and innovations to provide the right IT solution at the right time. Contact us with your project details if you are interested to get our Web Solution or Software Development Services.</p>
             </div>
             <div class="box">
-                <img src="" alt="">
-                <p>Communicating with you every step of the way</p>
-                <p>July 02, 2014 | Tag: Technology | By: David John</p>
+                <img src="public/images/blog/2.jpg" alt="">
+                <h3>Communicating with you every step of the way</h3>
+                <span>July 02, 2014 | Tag: Technology | By: David John</span>
                 <p>We combine continuing education and constant monitoring us with your project details if you are interested to ge of industry trends and innovations to provide the right IT solution at the right time. Contact us with your project details if you are interested to get our Web Solution or Software Development Services.</p>
-                
             </div>
-            <div class="box">
-                <img src="" alt="">
-                <p>Communicating with you every step of the way</p>
-                <p>July 02, 2014 | Tag: Technology | By: David John</p>
-                <p>We combine continuing education and constant monitoring us with your project details if you are interested to ge of industry trends and innovations to provide the right IT solution at the right time. Contact us with your project details if you are interested to get our Web Solution or Software Development Services.</p>
+        </div>
+
+        <div class="blog-btn">
+            <a href="">see more</a>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe mb-5">
+        <div class="container">
+            <div class="subscribe-form">
+                <h3 class="subscribe-title">Subscribe Here for Updates</h3>
+                <form class = "form-inline" action="" method="POST">
+                    <label for="form-email"></label>
+                    <input type="text" class="form-email" id="form-email" placeholder="Email...">
+                    <a href="#">Subscribe</a>
+                </form>
             </div>
         </div>
     </section>
 
-    
+    <!-- Executive -->
+    <section class="container mb-5">
+        <h2 class="title">Executing Team</h2>
+        <div class="box-wrapper executive">
+            <div class="box">
+                <img src="public/images/team/1.jpg" alt="alt-img">
+                <h3>Adam Miser</h3>
+                <span>CEO</span>
+                <a href="mailto:executive.member@blogger.com">executive.member@blogger.com</a> 
+            </div>
+            <div class="box">
+                <img src="public/images/team/2.jpg" alt="alt-img">
+                <h3>Adam Miser</h3>
+                <span>CEO</span>
+                <a href="mailto:executive.member@blogger.com">executive.member@blogger.com</a> 
+            </div>
+            <div class="box">
+                <img src="public/images/team/1.jpg" alt="alt-img">
+                <h3>Adam Miser</h3>
+                <span>CEO</span>
+                <a href="mailto:executive.member@blogger.com">executive.member@blogger.com</a> 
+            </div>
+            <div class="box">
+                <img src="public/images/team/2.jpg" alt="alt-img">
+                <h3>Adam Miser</h3>
+                <span>CEO</span>
+                <a href="mailto:executive.member@blogger.com">executive.member@blogger.com</a> 
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="footer">
+                <div class="contact">
+                    <ul>
+                        <li><a href="#">Home</a><span> | </span></li>
+                        <li><a href="#">Works</a><span> | </span></li>
+                        <li><a href="#">Team</a><span> | </span></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>              
+                <div class="social">   
+                    <div class="social-images">   
+                        <a href="#"><img src="public/images/footer/fb.png" alt="alt-img"></a>
+                    </div>
+                    <div class="social-images">   
+                        <a href="#"><img src="public/images/footer/twitter.svg" alt="alt-img"></a>
+                    </div>
+                    <div class="social-images">   
+                        <a href="#"><img src="public/images/footer/soc-net.svg" alt="alt-img"></a>
+                    </div>
+                    <div class="social-images">   
+                        <a href="#"><img src="public/images/footer/linkedin.png" alt="alt-img"></a>
+                    </div>
+                    <div class="social-images">   
+                        <a href="#"><img src="public/images/footer/google-plus.svg" alt="alt-img"></a>
+                    </div>
+                </div> 
+                <div class="contact-2">
+                    <p>Copyright &copy; 2014 LIMI SCHOOL | Designed By: Damir, All rights reserved</p>
+                </div>               
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    
     <script src="public/js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
