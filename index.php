@@ -106,10 +106,10 @@
         <div class="container">
             <div class="subscribe-form">
                 <h3 class="subscribe-title">Subscribe Here for Updates</h3>
-                <form class = "form-inline" action="" method="POST">
+                <form class="form-inline" action="" method="POST">
                     <label for="form-email"></label>
-                    <input type="text" class="form-email" id="form-email" placeholder="Email...">
-                    <a href="#">Subscribe</a>
+                    <input type="text" class="form-email" id="form-email" name="email" placeholder="Email...">
+                    <input class="btn-subscribe" type="submit" name="subscribe" value="Subscribe">
                 </form>
             </div>
         </div>

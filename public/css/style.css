@@ -322,6 +322,7 @@
     font-size: 24px;
     margin-bottom: 24px;
     font-weight: 400;
+    color: #444444;
 }
 
 .subscribe-form .form-inline {
@@ -331,7 +332,7 @@
     justify-content: center;
 }
 
-.subscribe-form .form-inline input {
+.subscribe-form .form-inline input[type=text] {
     vertical-align: middle;
     margin: 5px 0;
     padding: 10px;
@@ -348,16 +349,19 @@
     border: 1px solid #d65614 !important;
 }
 
-.subscribe-form .form-inline a {
-    text-decoration: none;
+.subscribe-form .form-inline input[type=submit] {
+    vertical-align: middle;
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 14px;
     color: #444444;
     border: 1px solid #ccc;
-    padding: 10px 15px;
-    font-size: 14px;
     background-color: #fff;
+    cursor: pointer;
+    border-left: none;
 }
 
-.subscribe-form .form-inline a:hover {
+.subscribe-form .form-inline input[type=submit]:hover {
     color: #fff;
     background-color: #d65614;
 }
@@ -666,7 +670,7 @@ input[type=checkbox] {
     }
 }
 
-/* Monitor - Od 768px dp (max) */
+/* Tablet - od 768 pixela */
 @media (min-width: 768px) {
     
 }
