@@ -2,7 +2,14 @@
 
     require_once('core/start.php');  
     //session_start();
-    $db = Database::connect();
+    //$db = Database::connect();
+
+    if (Input::exists('post')) {
+        // validate data
+        // if validate -> registration -> redirect
+        Session::set('success', 'You have been registered. You can now login.');
+        Redirect::to('login.php');
+    }
 
 ?>
 
@@ -30,15 +37,17 @@
     <!-- Header -->
     <?php include('public/templates/header.php'); ?>
 
-    <section class="signup-wrapper">
-        <div class="container-sm">
+    <section class="container-login-signup">
+        <div class="signup-wrapper">
             <div class="signup-box">
                 <div class="signup-form">
                     <h2>Sign Up</h2>
                     <form method="POST" action="">
-                        <input type="text" placeholder="email">
-                        <input type="password" placeholder="password">
-                        <input type="password" placeholder="confirm password">
+                        <input type="text" placeholder="First Name" name="first-name">
+                        <input type="text" placeholder="Last Name" name="last-name">
+                        <input type="text" placeholder="Email" name="email">
+                        <input type="password" placeholder="Password" name="password">
+                        <input type="password" placeholder="Confirm Password" name="confirm-password">
                         <div class="signup-options">
                             <input type="checkbox" id="terms-conds" name="terms-conds">
                             <label for="terms-conds">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>

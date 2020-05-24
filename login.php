@@ -2,7 +2,15 @@
 
     require_once('core/start.php');  
     //session_start();
-    $db = Database::connect();
+    //$db = Database::connect();
+
+    if (Input::exists('post')) {
+        // validate data
+        // if validate -> login -> redirect
+        Session::set('success', 'You are logged in');
+        Redirect::to('index.php');
+    }
+
 
 ?>
 
@@ -30,14 +38,17 @@
     <!-- Header -->
     <?php include('public/templates/header.php'); ?>
 
-    <section class="login-wrapper">
-        <div class="container-sm">
+    <section class="container-login-signup">
+        <div class="login-wrapper">
             <div class="login-box">
                 <div class="login-form">
                     <h2>Account Login</h2>
+                    <div class="login-msg">
+                        <?php include('public/templates/messages.php');?>
+                    </div>
                     <form method="POST" action="">
-                        <input type="text" placeholder="email">
-                        <input type="password" placeholder="password">
+                        <input type="text" placeholder="Email" name=email>
+                        <input type="password" placeholder="Password" name="password">
                         <div class="login-options">
                             <div class="option-remember options-box">
                                 <input type="checkbox" id="remember" name="remember">

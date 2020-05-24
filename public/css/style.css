@@ -22,7 +22,13 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 15px;
+}
+
+.container-login-signup {
+    width: 100%;
+    min-height: 829px;
+    background: rgb(222,165,165);
+    background: linear-gradient(0deg, rgba(222,165,165,1) 0%, rgba(227,161,127,0.9794292717086834) 41%, rgba(227,140,95,1) 100%);
 }
 
 .responsive-menu {
@@ -239,14 +245,6 @@
 /* End Boxes */
 
 /* Events */
-
-/*.box-wrapper.events .box {
-     padding-right: 0;
-}*/
-
-/* .box-wrapper.events img {
-    width: 100%;
-} */
 
 .box-wrapper.events h3 {
     margin: 20px 0 10px 0;
@@ -483,9 +481,9 @@
 
 .login-wrapper, 
 .signup-wrapper {
-    min-height: 780px;
-    background: rgb(222,165,165);
-    background: linear-gradient(0deg, rgba(222,165,165,1) 0%, rgba(227,161,127,0.9794292717086834) 41%, rgba(227,140,95,1) 100%);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 70px;
 }
 
 .login-box, 
@@ -609,8 +607,58 @@ input[type=checkbox] {
     color: #d65714;
 }
 
-/* End Login & SignUp */
+/* Message box in Login */
 
+.login-msg :first-child {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.login-msg * :first-child {
+    width: 96%;
+}
+
+.login-msg span {
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.login-msg .close-me {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3em;
+    padding: 3px 0 0 3px;
+}
+
+.login-msg .success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.login-msg .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.login-msg .warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.login-msg .info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+/* End Message box in Login */
+
+/* End Login & SignUp */
 
 /* Responsive */
 /* Tablet - do 768 pixela */
