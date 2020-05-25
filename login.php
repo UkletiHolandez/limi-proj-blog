@@ -11,7 +11,6 @@
         Redirect::to('index.php');
     }
 
-
 ?>
 
 <!DOCTYPE html>
