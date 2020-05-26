@@ -1,12 +1,10 @@
 $(document).ready(function() {
     $('.fa-bars').click(function() {
-        $('.responsive-menu').toggleClass('expand');
+        $('.responsive-menu').slideToggle();
     });
 	
 	$('.close-me').click(function() {
-        //$('.login-msg').fadeOut();
         $('.login-msg').hide("slow");
-        //alert("Close me");
     });
 
 });
